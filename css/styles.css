@@ -1,0 +1,122 @@
+body{
+  font-family: 'Inter', sans-serif;
+  color: hsl(240, 38%, 20%);
+  background-image: url("../images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+h1{
+  font-size: 32px;
+  font-weight: 300;
+}
+
+p.name{
+  font-weight: 700;
+}
+
+p.position{
+  font-weight: 700;
+  color: hsl(240, 18%, 77%);
+  margin-left: 2%;
+}
+
+.main-box{
+  display: flex;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.image-box{
+  background-image: url("../images/pattern-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  position: relative;
+}
+
+.text-box{
+  background-image: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 60%;
+  z-index: +1;
+  padding-left: 10%;
+  padding-top: 3%;
+  margin: auto -10% auto auto;
+}
+
+.avatar{
+  width: 80%;
+  padding: 60px;
+  display: block;
+  margin: auto;
+}
+
+.name-position{
+  display: flex;
+}
+
+.slide-btn{
+  background-color: #ffff;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 18px 25px;
+  margin: 0;
+  outline: none;
+}
+
+.slide-btn-box{
+  position: absolute;
+  bottom: 35px;
+  left: 100px;
+  background-color: #ffff;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px hsl(240, 18%, 77%);
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 900px){
+  .main-box{
+    flex-direction: column-reverse;
+  }
+
+  .text-box{
+    width: 90%;
+    margin: 10% auto auto auto;
+    text-align: center;
+    padding: 5% 0;
+  }
+
+  h1{
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .name-position{
+    flex-direction: column;
+  }
+
+  .avatar{
+    width: 80%;
+    padding: 30px;
+  }
+
+  .slide-btn-box{
+    bottom: 5px;
+    left: 35%;
+  }
+
+  p{
+    margin: 0;
+  }
+
+  p.position{
+    margin-left: 0;
+    margin-top: 2%;
+  }
+}
